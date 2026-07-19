@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TesT</title>
+</head>
+<body>
+  <h2>Enter email</h2>
+
+  <input type="email" id="email" placeholder="you@example.com">
+  <button id="submitBtn">Send</button>
+
+  
+  <p id="result"></p>
+
+  <script>
+    document.getElementById('submitBtn').addEventListener('click', function () {
+      var email = document.getElementById('email').value;
+      document.getElementById('result').innerHTML = 'You enter: ' + email;
+    });
+  </script>
+</body>
+</html>
